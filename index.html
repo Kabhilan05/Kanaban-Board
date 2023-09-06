@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cb15224cfa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- !Task Ticket -->
+    <div class="cointainer">
+      <div class="priority">
+        <div class="red color"></div>
+        <div class="green color"></div>
+        <div class="blue color"></div>
+        <div class="black color"></div>
+      </div>
+      <div class="action button" id="action1">
+        <div class="add highlight" id="colorchange">
+          <i class="fa-sharp fa-solid fa-plus"></i>
+        </div>
+        <div class="remove highlight" id="colornochange">
+          <i class="fa-sharp fa-solid fa-trash"></i>
+        </div>
+      </div>
+      <div class="heading">KANBAN BOARD</div>
+      <div class="help"><i class="fa-solid fa-question fa-bounce"></i></div>
+    </div>
+    <!-- !Model Task Area -->
+    <div class="main-content">
+      <!-- <div class="ticket-content">
+            <div class="taskcolor"></div>
+            <div class="ticketid">1234</div>
+            <div class="taskarea" contenteditable="false">Random task</div>
+            <div class="ticket-lock"><i class="fa-sharp fa-solid fa-lock"></i></div>
+            
+        </div> -->
+    </div>
+
+    <!-- !Task area -->
+    <div class="model-content">
+      <textarea
+        class="textAre-content"
+        placeholder="Entet Your Task here "
+      ></textarea>
+      <div class="priority-colors-cointainer">
+        <div class="priorty-color red" id="colorred"></div>
+        <div class="priorty-color green" id="colorgreen"></div>
+        <div class="priorty-color blue" id="colorblue"></div>
+        <div class="priorty-color black active" id="colorblue"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
